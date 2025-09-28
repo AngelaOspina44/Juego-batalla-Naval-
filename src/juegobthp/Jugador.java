@@ -7,8 +7,8 @@ public class Jugador {
         this.tablero = tablero;
     }
 
-    public void disparar(int x, int y, Tablero tableroEnemigo) {
-        // Método genérico
+    public boolean disparar(Posicion posicion, Tablero tableroEnemigo) {
+        return tableroEnemigo.recibirDisparo(posicion);
     }
 
     public Tablero getTablero() {

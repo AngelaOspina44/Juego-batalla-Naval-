@@ -6,7 +6,8 @@ public class Maquina extends Jugador {
     }
 
     @Override
-    public void disparar(int x, int y, Tablero tableroEnemigo) {
-        tableroEnemigo.recibirDisparo(x, y);
+    public boolean disparar(Posicion posicion, Tablero tableroEnemigo) {
+        boolean impacto = tableroEnemigo.recibirDisparo(posicion);
+        return impacto;
     }
 }

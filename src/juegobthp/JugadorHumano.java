@@ -6,7 +6,7 @@ public class JugadorHumano extends Jugador {
     }
 
     @Override
-    public void disparar(int x, int y, Tablero tableroEnemigo) {
-        tableroEnemigo.recibirDisparo(x, y);
+    public boolean disparar(Posicion posicion, Tablero tableroEnemigo) {
+        return tableroEnemigo.recibirDisparo(posicion);
     }
 }
