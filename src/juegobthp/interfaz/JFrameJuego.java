@@ -322,7 +322,7 @@ public class JFrameJuego extends javax.swing.JFrame {
     private void initComponents() {
         java.awt.GridBagConstraints gridBagConstraints;
 
-        panelPrincipal = new javax.swing.JPanel();
+        panelPrincipal = new PanelFondo("/juegobthp/imagenes/bn.png");
         TableroJugador = new javax.swing.JPanel();
         TableroMaquina = new javax.swing.JPanel();
         TituloJugador = new javax.swing.JLabel();
@@ -331,9 +331,9 @@ public class JFrameJuego extends javax.swing.JFrame {
         ReiniciarJuego = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1100, 750));
         setSize(new java.awt.Dimension(1200, 750));
 
+        //
         panelPrincipal.setBackground(new java.awt.Color(0, 153, 204));
         panelPrincipal.setLayout(new java.awt.GridBagLayout());
 
@@ -387,7 +387,7 @@ public class JFrameJuego extends javax.swing.JFrame {
         panelPrincipal.add(TituloMaquina, gridBagConstraints);
 
         Titulo.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
-        Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        Titulo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         Titulo.setText("Batalla Naval");
         gridBagConstraints = new java.awt.GridBagConstraints();
         gridBagConstraints.gridx = 0;
